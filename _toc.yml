@@ -39,3 +39,17 @@ parts:
       - file: 18_q_learning_dqn
       - file: 19_policy_gradients
       - file: 20_ppo_modern_rl
+
+  - caption: "Part 7: Applied AI Systems"
+    chapters:
+      - file: 21_rag
+      - file: 22_ai_agents
+      - file: 23_ai_evals
+      - file: 24_production_monitoring
+
+  - caption: "Part 8: Advanced Topics"
+    chapters:
+      - file: 25_tokenization_lm_training
+      - file: 26_inference_optimization
+      - file: 27_ml_systems
+      - file: 28_multimodal_ai

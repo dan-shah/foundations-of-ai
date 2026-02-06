@@ -37,8 +37,8 @@ jupyter notebook
 | **4. Neural Network Architectures** | CNNs, RNNs, attention mechanisms | 10–12 |
 | **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 13–16 |
 | **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 17–20 |
-| **7. Robotics & Embodied AI** | *Coming soon* |  |
-| **8. AI Agents** | *Coming soon* |  |
+| **7. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 21–24 |
+| **8. Advanced Topics** | Tokenization & LM training, inference optimization, ML systems, multimodal AI | 25–28 |
 
 ## Prerequisites
 
