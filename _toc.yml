@@ -1,0 +1,41 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: "Part 1: Mathematical Foundations"
+    chapters:
+      - file: 01_linear_algebra
+      - file: 02_calculus
+      - file: 03_probability_statistics
+
+  - caption: "Part 2: Python Foundations"
+    chapters:
+      - file: 04_python_oop
+      - file: 05_numpy_deep_dive
+
+  - caption: "Part 3: Neural Network Fundamentals"
+    chapters:
+      - file: 06_perceptrons_basic_networks
+      - file: 07_backpropagation
+      - file: 08_pytorch_fundamentals
+      - file: 09_training_deep_networks
+
+  - caption: "Part 4: Neural Network Architectures"
+    chapters:
+      - file: 10_convolutional_neural_networks
+      - file: 11_recurrent_neural_networks
+      - file: 12_attention_mechanisms
+
+  - caption: "Part 5: Transformers & LLMs"
+    chapters:
+      - file: 13_transformer_architecture
+      - file: 14_language_models
+      - file: 15_embeddings
+      - file: 16_finetuning_and_peft
+
+  - caption: "Part 6: Reinforcement Learning"
+    chapters:
+      - file: 17_rl_fundamentals
+      - file: 18_q_learning_dqn
+      - file: 19_policy_gradients
+      - file: 20_ppo_modern_rl

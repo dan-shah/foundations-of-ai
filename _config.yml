@@ -1,0 +1,39 @@
+title: "Foundations of AI"
+author: "Dan Shah"
+
+execute:
+  execute_notebooks: "off"
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - colon_fence
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: false
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+  notebook_interface: "classic"
+
+repository:
+  url: "https://github.com/dan-shah/foundations-of-ai"
+  branch: main
+  path_to_book: ""
+
+exclude_patterns:
+  - venv
+  - _build
+  - "**.ipynb_checkpoints"
+  - .github
+  - .claude
+  - curriculum.md
+  - skill.md
+
+sphinx:
+  config:
+    html_show_copyright: false
