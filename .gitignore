@@ -16,8 +16,9 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
-# Claude Code
-.claude/
+# Claude Code (local config private, skills shared)
+.claude/*
+!.claude/skills/
 
 # OS
 .DS_Store
