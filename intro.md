@@ -6,7 +6,7 @@ A comprehensive, hands-on curriculum covering the mathematical foundations, neur
 
 ## What This Is
 
-This is an open-source collection of 28 interactive Jupyter notebooks designed to take you from foundational math through building and training modern deep learning models. Every concept is taught with:
+This is an open-source collection of 32 interactive Jupyter notebooks designed to take you from foundational math through building and training modern deep learning models. Every concept is taught with:
 
 - **Intuitive explanations** before formulas
 - **Visualizations** for every major concept
@@ -34,14 +34,14 @@ jupyter notebook
 
 | Part | Topics | Notebooks |
 |------|--------|-----------|
-| **1. Mathematical Foundations** | Linear algebra, calculus, probability & statistics | 01–03 |
-| **2. Python Foundations** | OOP for ML, NumPy deep dive | 04–05 |
-| **3. Neural Network Fundamentals** | Perceptrons, backpropagation, PyTorch, training | 06–09 |
-| **4. Neural Network Architectures** | CNNs, RNNs, attention mechanisms | 10–12 |
-| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 13–16 |
-| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 17–20 |
-| **7. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 21–24 |
-| **8. Advanced Topics** | Tokenization & LM training, inference optimization, ML systems, multimodal AI | 25–28 |
+| **1. Mathematical Foundations** | Linear algebra, calculus, probability & statistics, classical ML, optimization | 01–06 |
+| **2. Python Foundations** | OOP for ML, NumPy deep dive | 07–08 |
+| **3. Neural Network Fundamentals** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
+| **4. Neural Network Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
+| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 17–20 |
+| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 21–24 |
+| **7. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 25–28 |
+| **8. Advanced Topics** | Tokenization & LM training, inference optimization, ML systems, multimodal AI | 29–32 |
 
 ## Make It Yours
 

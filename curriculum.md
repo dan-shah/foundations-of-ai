@@ -98,6 +98,79 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
+### 1.4 Classical Machine Learning
+
+**Concepts:**
+- Decision trees, random forests, gradient boosting (XGBoost)
+- Support vector machines and kernel methods
+- k-means and DBSCAN clustering
+- k-NN and naive Bayes classification
+- Model evaluation: cross-validation, ROC curves, confusion matrices
+
+**Learning Objectives:**
+- [ ] Build and interpret decision trees
+- [ ] Understand ensemble methods (bagging, boosting)
+- [ ] Apply SVMs with different kernels
+- [ ] Evaluate models with proper metrics and cross-validation
+- [ ] Know when classical ML beats deep learning
+
+**Practical Exercises:**
+- Train and visualize decision tree boundaries
+- Compare random forest vs gradient boosting on tabular data
+- Cluster data with k-means and DBSCAN
+- Build a complete model evaluation pipeline with ROC curves
+
+---
+
+### 1.5 Optimization & Linear Programming
+
+**Concepts:**
+- Linear programming formulation and geometric intuition
+- Simplex method (conceptual + implementation)
+- Duality theory
+- Convex optimization: convex sets, functions, global optimality
+- Constrained optimization: Lagrange multipliers, KKT conditions
+
+**Learning Objectives:**
+- [ ] Formulate optimization problems mathematically
+- [ ] Solve linear programs graphically and with scipy
+- [ ] Understand primal-dual relationships
+- [ ] Apply Lagrange multipliers to constrained problems
+- [ ] Connect optimization to ML (SVM, regularization)
+
+**Practical Exercises:**
+- Solve linear programs graphically and verify with scipy
+- Implement a simplified simplex method
+- Visualize Lagrange multiplier geometry
+- Formulate SVM as a constrained optimization problem
+
+---
+
+### 1.6 Optimization Theory for ML
+
+**Concepts:**
+- Convergence analysis of gradient descent
+- Stochastic gradient descent theory
+- Bias-variance tradeoff (formal treatment)
+- VC dimension and generalization bounds
+- PAC learning framework
+- Regularization theory (L1 sparsity, L2 small weights)
+
+**Learning Objectives:**
+- [ ] Analyze gradient descent convergence rates
+- [ ] Understand bias-variance decomposition formally
+- [ ] Explain VC dimension and its role in generalization
+- [ ] Derive why L1 gives sparsity and L2 gives small weights
+- [ ] Understand why overparameterized networks can generalize
+
+**Practical Exercises:**
+- Compare GD vs SGD convergence empirically
+- Visualize bias-variance tradeoff as model complexity changes
+- Explore L1 vs L2 regularization geometry
+- Observe double descent in practice
+
+---
+
 ## Part 2: Python Foundations (Week 4)
 
 ### 2.1 Python OOP Refresher
@@ -260,7 +333,32 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 4.2 Recurrent Neural Networks (RNNs)
+### 4.2 Computer Vision: Beyond Classification
+
+**Concepts:**
+- Object detection: anchor boxes, IoU, NMS, YOLO architecture
+- Semantic segmentation: FCN, U-Net architecture
+- Instance segmentation concepts (Mask R-CNN)
+- Vision Transformers (ViT): patch embeddings
+- CLIP: connecting vision and language
+- Transfer learning for vision tasks
+
+**Learning Objectives:**
+- [ ] Implement IoU and non-maximum suppression from scratch
+- [ ] Understand YOLO's single-pass detection approach
+- [ ] Build a U-Net for semantic segmentation
+- [ ] Explain how Vision Transformers process images as patch sequences
+- [ ] Use transfer learning for vision tasks
+
+**Practical Exercises:**
+- Implement IoU and NMS from scratch
+- Build a simplified YOLO-style grid predictor
+- Implement a mini U-Net in PyTorch
+- Create patch embeddings for Vision Transformers
+
+---
+
+### 4.3 Recurrent Neural Networks (RNNs)
 
 **Concepts:**
 - Sequence modeling
@@ -284,7 +382,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 4.3 Attention Mechanisms
+### 4.4 Attention Mechanisms
 
 **Concepts:**
 - Attention intuition (query, key, value)
@@ -650,4 +748,4 @@ Use the checkboxes in each section to track completed learning objectives. Each 
 
 ---
 
-*This curriculum is designed to be completed over approximately 28 weeks with dedicated study. Adjust pacing based on your background and available time.*
+*This curriculum is designed to be completed over approximately 32 weeks with dedicated study. Adjust pacing based on your background and available time.*

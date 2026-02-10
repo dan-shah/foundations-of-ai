@@ -1,6 +1,6 @@
 # Foundations of AI
 
-A comprehensive, hands-on AI curriculum — 28 interactive Jupyter notebooks from linear algebra to production AI systems.
+A comprehensive, hands-on AI curriculum — 32 interactive Jupyter notebooks from linear algebra to production AI systems.
 
 **Built to be personalized.** Fork it, pick your passion, and make every concept click.
 
@@ -15,18 +15,18 @@ jupyter notebook
 
 ## What's Inside
 
-28 notebooks covering a complete path from math foundations to production AI:
+32 notebooks covering a complete path from math foundations to production AI:
 
 | Part | Topics | Notebooks |
 |------|--------|-----------|
-| **1. Math Foundations** | Linear algebra, calculus, probability & statistics | 01–03 |
-| **2. Python Foundations** | OOP for ML, NumPy deep dive | 04–05 |
-| **3. Neural Networks** | Perceptrons, backpropagation, PyTorch, training | 06–09 |
-| **4. Architectures** | CNNs, RNNs, attention mechanisms | 10–12 |
-| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 13–16 |
-| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 17–20 |
-| **7. Applied AI** | RAG, AI agents, evaluations, production monitoring | 21–24 |
-| **8. Advanced Topics** | Tokenization, inference optimization, ML systems, multimodal AI | 25–28 |
+| **1. Math Foundations** | Linear algebra, calculus, probability & statistics, classical ML, optimization | 01–06 |
+| **2. Python Foundations** | OOP for ML, NumPy deep dive | 07–08 |
+| **3. Neural Networks** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
+| **4. Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
+| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 17–20 |
+| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 21–24 |
+| **7. Applied AI** | RAG, AI agents, evaluations, production monitoring | 25–28 |
+| **8. Advanced Topics** | Tokenization, inference optimization, ML systems, multimodal AI | 29–32 |
 
 Every concept is taught with intuitive explanations before formulas, visualizations, from-scratch implementations, and practical exercises.
 
@@ -84,9 +84,9 @@ The linear algebra notebook (`01_linear_algebra.ipynb`) is the reference impleme
 ## Project Structure
 
 ```
-├── 01_linear_algebra.ipynb        # Notebooks 01-28 (the curriculum)
+├── 01_linear_algebra.ipynb        # Notebooks 01-32 (the curriculum)
 ├── ...
-├── 28_multimodal_ai.ipynb
+├── 32_multimodal_ai.ipynb
 ├── .claude/skills/personalize/    # /personalize skill for Claude Code
 │   ├── SKILL.md                   #   Skill definition and instructions
 │   └── references/
