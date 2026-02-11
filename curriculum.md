@@ -6,18 +6,19 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ## Table of Contents
 
-1. [Part 1: Mathematical Foundations (Weeks 1-3)](#part-1-mathematical-foundations-weeks-1-3)
-2. [Part 2: Python Foundations (Week 4)](#part-2-python-foundations-week-4)
-3. [Part 3: Neural Network Fundamentals (Weeks 5-8)](#part-3-neural-network-fundamentals-weeks-5-8)
-4. [Part 4: Neural Network Architectures (Weeks 9-12)](#part-4-neural-network-architectures-weeks-9-12)
-5. [Part 5: Transformers & LLMs (Weeks 13-18)](#part-5-transformers--llms-weeks-13-18)
-6. [Part 6: Reinforcement Learning (Weeks 19-22)](#part-6-reinforcement-learning-weeks-19-22)
-7. [Part 7: Robotics & Embodied AI (Weeks 23-25)](#part-7-robotics--embodied-ai-weeks-23-25)
-8. [Part 8: AI Agents (Weeks 26-28)](#part-8-ai-agents-weeks-26-28)
+1. [Part 1: Mathematical Foundations (Weeks 1-2)](#part-1-mathematical-foundations-weeks-1-2)
+2. [Part 2: Programming Foundations (Week 3)](#part-2-programming-foundations-week-3)
+3. [Part 3: Classical ML & Optimization (Weeks 4-5)](#part-3-classical-ml--optimization-weeks-4-5)
+4. [Part 4: Neural Network Fundamentals (Weeks 6-9)](#part-4-neural-network-fundamentals-weeks-6-9)
+5. [Part 5: Neural Network Architectures (Weeks 10-13)](#part-5-neural-network-architectures-weeks-10-13)
+6. [Part 6: Transformers & LLMs (Weeks 14-19)](#part-6-transformers--llms-weeks-14-19)
+7. [Part 7: Reinforcement Learning (Weeks 20-23)](#part-7-reinforcement-learning-weeks-20-23)
+8. [Part 8: Applied AI Systems (Weeks 24-27)](#part-8-applied-ai-systems-weeks-24-27)
+9. [Part 9: Advanced Topics (Weeks 28-30)](#part-9-advanced-topics-weeks-28-30)
 
 ---
 
-## Part 1: Mathematical Foundations (Weeks 1-3)
+## Part 1: Mathematical Foundations (Weeks 1-2)
 
 ### 1.1 Linear Algebra Refresher
 
@@ -98,80 +99,9 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 1.4 Classical Machine Learning
-
-**Concepts:**
-- Decision trees, random forests, gradient boosting (XGBoost)
-- Support vector machines and kernel methods
-- k-means and DBSCAN clustering
-- k-NN and naive Bayes classification
-- Model evaluation: cross-validation, ROC curves, confusion matrices
-
-**Learning Objectives:**
-- [ ] Build and interpret decision trees
-- [ ] Understand ensemble methods (bagging, boosting)
-- [ ] Apply SVMs with different kernels
-- [ ] Evaluate models with proper metrics and cross-validation
-- [ ] Know when classical ML beats deep learning
-
-**Practical Exercises:**
-- Train and visualize decision tree boundaries
-- Compare random forest vs gradient boosting on tabular data
-- Cluster data with k-means and DBSCAN
-- Build a complete model evaluation pipeline with ROC curves
-
 ---
 
-### 1.5 Optimization & Linear Programming
-
-**Concepts:**
-- Linear programming formulation and geometric intuition
-- Simplex method (conceptual + implementation)
-- Duality theory
-- Convex optimization: convex sets, functions, global optimality
-- Constrained optimization: Lagrange multipliers, KKT conditions
-
-**Learning Objectives:**
-- [ ] Formulate optimization problems mathematically
-- [ ] Solve linear programs graphically and with scipy
-- [ ] Understand primal-dual relationships
-- [ ] Apply Lagrange multipliers to constrained problems
-- [ ] Connect optimization to ML (SVM, regularization)
-
-**Practical Exercises:**
-- Solve linear programs graphically and verify with scipy
-- Implement a simplified simplex method
-- Visualize Lagrange multiplier geometry
-- Formulate SVM as a constrained optimization problem
-
----
-
-### 1.6 Optimization Theory for ML
-
-**Concepts:**
-- Convergence analysis of gradient descent
-- Stochastic gradient descent theory
-- Bias-variance tradeoff (formal treatment)
-- VC dimension and generalization bounds
-- PAC learning framework
-- Regularization theory (L1 sparsity, L2 small weights)
-
-**Learning Objectives:**
-- [ ] Analyze gradient descent convergence rates
-- [ ] Understand bias-variance decomposition formally
-- [ ] Explain VC dimension and its role in generalization
-- [ ] Derive why L1 gives sparsity and L2 gives small weights
-- [ ] Understand why overparameterized networks can generalize
-
-**Practical Exercises:**
-- Compare GD vs SGD convergence empirically
-- Visualize bias-variance tradeoff as model complexity changes
-- Explore L1 vs L2 regularization geometry
-- Observe double descent in practice
-
----
-
-## Part 2: Python Foundations (Week 4)
+## Part 2: Programming Foundations (Week 3)
 
 ### 2.1 Python OOP Refresher
 
@@ -215,9 +145,84 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-## Part 3: Neural Network Fundamentals (Weeks 5-8)
+## Part 3: Classical ML & Optimization (Weeks 4-5)
 
-### 3.1 Perceptrons & Basic Networks
+### 3.1 Classical Machine Learning
+
+**Concepts:**
+- Decision trees, random forests, gradient boosting (XGBoost)
+- Support vector machines and kernel methods
+- k-means and DBSCAN clustering
+- k-NN and naive Bayes classification
+- Model evaluation: cross-validation, ROC curves, confusion matrices
+
+**Learning Objectives:**
+- [ ] Build and interpret decision trees
+- [ ] Understand ensemble methods (bagging, boosting)
+- [ ] Apply SVMs with different kernels
+- [ ] Evaluate models with proper metrics and cross-validation
+- [ ] Know when classical ML beats deep learning
+
+**Practical Exercises:**
+- Train and visualize decision tree boundaries
+- Compare random forest vs gradient boosting on tabular data
+- Cluster data with k-means and DBSCAN
+- Build a complete model evaluation pipeline with ROC curves
+
+---
+
+### 3.2 Optimization & Linear Programming
+
+**Concepts:**
+- Linear programming formulation and geometric intuition
+- Simplex method (conceptual + implementation)
+- Duality theory
+- Convex optimization: convex sets, functions, global optimality
+- Constrained optimization: Lagrange multipliers, KKT conditions
+
+**Learning Objectives:**
+- [ ] Formulate optimization problems mathematically
+- [ ] Solve linear programs graphically and with scipy
+- [ ] Understand primal-dual relationships
+- [ ] Apply Lagrange multipliers to constrained problems
+- [ ] Connect optimization to ML (SVM, regularization)
+
+**Practical Exercises:**
+- Solve linear programs graphically and verify with scipy
+- Implement a simplified simplex method
+- Visualize Lagrange multiplier geometry
+- Formulate SVM as a constrained optimization problem
+
+---
+
+### 3.3 Optimization Theory for ML
+
+**Concepts:**
+- Convergence analysis of gradient descent
+- Stochastic gradient descent theory
+- Bias-variance tradeoff (formal treatment)
+- VC dimension and generalization bounds
+- PAC learning framework
+- Regularization theory (L1 sparsity, L2 small weights)
+
+**Learning Objectives:**
+- [ ] Analyze gradient descent convergence rates
+- [ ] Understand bias-variance decomposition formally
+- [ ] Explain VC dimension and its role in generalization
+- [ ] Derive why L1 gives sparsity and L2 gives small weights
+- [ ] Understand why overparameterized networks can generalize
+
+**Practical Exercises:**
+- Compare GD vs SGD convergence empirically
+- Visualize bias-variance tradeoff as model complexity changes
+- Explore L1 vs L2 regularization geometry
+- Observe double descent in practice
+
+---
+
+## Part 4: Neural Network Fundamentals (Weeks 6-9)
+
+### 4.1 Perceptrons & Basic Networks
 
 **Concepts:**
 - Single neuron (perceptron) from scratch
@@ -239,7 +244,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 3.2 Backpropagation
+### 4.2 Backpropagation
 
 **Concepts:**
 - Computational graphs
@@ -263,7 +268,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 3.3 Deep Learning Frameworks
+### 4.3 Deep Learning Frameworks
 
 **Concepts:**
 - PyTorch fundamentals
@@ -285,7 +290,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 3.4 Training Deep Networks
+### 4.4 Training Deep Networks
 
 **Concepts:**
 - Optimizers (SGD, Momentum, Adam, AdamW)
@@ -307,9 +312,9 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-## Part 4: Neural Network Architectures (Weeks 9-12)
+## Part 5: Neural Network Architectures (Weeks 10-13)
 
-### 4.1 Convolutional Neural Networks (CNNs)
+### 5.1 Convolutional Neural Networks (CNNs)
 
 **Concepts:**
 - Convolution operations (stride, padding, dilation)
@@ -333,7 +338,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 4.2 Computer Vision: Beyond Classification
+### 5.2 Computer Vision: Beyond Classification
 
 **Concepts:**
 - Object detection: anchor boxes, IoU, NMS, YOLO architecture
@@ -358,7 +363,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 4.3 Recurrent Neural Networks (RNNs)
+### 5.3 Recurrent Neural Networks (RNNs)
 
 **Concepts:**
 - Sequence modeling
@@ -382,7 +387,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 4.4 Attention Mechanisms
+### 5.4 Attention Mechanisms
 
 **Concepts:**
 - Attention intuition (query, key, value)
@@ -404,9 +409,9 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-## Part 5: Transformers & LLMs (Weeks 13-18)
+## Part 6: Transformers & LLMs (Weeks 14-19)
 
-### 5.1 Transformer Architecture
+### 6.1 Transformer Architecture
 
 **Concepts:**
 - "Attention Is All You Need" paper deep dive
@@ -430,31 +435,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 5.2 Language Models
-
-**Concepts:**
-- Tokenization (BPE, WordPiece, SentencePiece)
-- Autoregressive language modeling
-- GPT architecture (decoder-only)
-- BERT and bidirectional models (encoder-only)
-
-**Learning Objectives:**
-- [ ] Implement BPE tokenization
-- [ ] Understand the difference between GPT and BERT
-- [ ] Train a small GPT-style model
-- [ ] Fine-tune BERT for classification
-
-**Practical Exercises:**
-- Build a BPE tokenizer from scratch
-- Train a mini-GPT on a text corpus
-- Fine-tune BERT for sentiment analysis
-- Compare masked vs causal language modeling
-
-**Key Project:** Train a small language model (~10M parameters) on a custom dataset
-
----
-
-### 5.3 Embeddings
+### 6.2 Embeddings
 
 **Concepts:**
 - Word2Vec (Skip-gram, CBOW)
@@ -478,7 +459,53 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 5.4 Fine-tuning & PEFT
+### 6.3 Tokenization & Language Model Training
+
+**Concepts:**
+- Tokenization algorithms (BPE, WordPiece, SentencePiece)
+- Subword tokenization tradeoffs
+- Pretraining objectives (causal LM, masked LM)
+- Training dynamics: loss curves, learning rate schedules
+- Scaling laws (model size, data, compute)
+
+**Learning Objectives:**
+- [ ] Implement BPE and WordPiece tokenizers from scratch
+- [ ] Understand how tokenization impacts model behavior
+- [ ] Train a small language model training loop
+- [ ] Explore scaling laws experimentally
+
+**Practical Exercises:**
+- Build BPE and WordPiece tokenizers from scratch
+- Compare tokenization strategies on different text
+- Implement a training loop with learning rate warm-up
+- Visualize scaling law relationships
+
+---
+
+### 6.4 Language Models
+
+**Concepts:**
+- Autoregressive language modeling
+- GPT architecture (decoder-only)
+- BERT and bidirectional models (encoder-only)
+- Scaling laws and architecture choices
+
+**Learning Objectives:**
+- [ ] Understand the difference between GPT and BERT
+- [ ] Train a small GPT-style model
+- [ ] Fine-tune BERT for classification
+- [ ] Choose the right architecture for a task
+
+**Practical Exercises:**
+- Train a mini-GPT on a text corpus
+- Fine-tune BERT for sentiment analysis
+- Compare masked vs causal language modeling
+
+**Key Project:** Train a small language model (~10M parameters) on a custom dataset
+
+---
+
+### 6.5 Fine-tuning & PEFT
 
 **Concepts:**
 - Transfer learning for NLP
@@ -500,9 +527,9 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-## Part 6: Reinforcement Learning (Weeks 19-22)
+## Part 7: Reinforcement Learning (Weeks 20-23)
 
-### 6.1 RL Fundamentals
+### 7.1 RL Fundamentals
 
 **Concepts:**
 - Markov Decision Processes (MDPs)
@@ -524,7 +551,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 6.2 Q-Learning
+### 7.2 Q-Learning
 
 **Concepts:**
 - Tabular Q-learning
@@ -548,7 +575,7 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 6.3 Policy Gradient Methods
+### 7.3 Policy Gradient Methods
 
 **Concepts:**
 - REINFORCE algorithm
@@ -570,90 +597,58 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 6.4 RL Projects
-
-**Projects:**
-1. **Game Playing Agent:** Train an agent to play a classic game
-2. **Continuous Control:** Solve MuJoCo tasks (Hopper, Walker)
-3. **Multi-Agent RL:** Simple competitive or cooperative environment
-
----
-
-## Part 7: Robotics & Embodied AI (Weeks 23-25)
-
-### 7.1 Robot Learning Basics
+### 7.4 PPO & Modern RL
 
 **Concepts:**
-- Simulation environments (PyBullet, MuJoCo, Isaac Gym)
-- Sensor data processing (cameras, lidar, proprioception)
-- Motor control and action spaces
-- Reward shaping for robotics
+- Proximal Policy Optimization (PPO)
+- Trust regions and clipping
+- RLHF (RL from Human Feedback)
+- Modern RL applications
 
 **Learning Objectives:**
-- [ ] Set up a robot simulation environment
-- [ ] Process sensor observations
-- [ ] Design reward functions for robot tasks
-- [ ] Train a simple locomotion policy
+- [ ] Understand and implement PPO
+- [ ] Explain trust region methods
+- [ ] Connect PPO to RLHF for LLM alignment
+- [ ] Apply modern RL to practical problems
 
 **Practical Exercises:**
-- Set up PyBullet environment
-- Train a robot arm to reach targets
-- Implement basic locomotion controller
-- Experiment with reward shaping
+- Implement PPO from scratch
+- Compare PPO vs REINFORCE stability
+- Simulate a simplified RLHF pipeline
+- Train PPO on continuous control tasks
 
 ---
 
-### 7.2 Imitation Learning
+## Part 8: Applied AI Systems (Weeks 24-27)
+
+### 8.1 Retrieval-Augmented Generation (RAG)
 
 **Concepts:**
-- Behavioral cloning
-- Dataset aggregation (DAgger)
-- Inverse reinforcement learning (IRL)
-- Learning from demonstrations
+- Document chunking and embedding
+- Vector similarity search
+- Retrieval pipeline design
+- Grounding LLM outputs in source documents
 
 **Learning Objectives:**
-- [ ] Collect and process demonstration data
-- [ ] Train a policy via behavioral cloning
-- [ ] Understand the distribution shift problem
-- [ ] Apply IRL to recover reward functions
+- [ ] Build a complete RAG pipeline from scratch
+- [ ] Understand chunking strategies and their tradeoffs
+- [ ] Implement vector similarity search
+- [ ] Evaluate retrieval quality
 
 **Practical Exercises:**
-- Collect demonstrations for a simple task
-- Implement behavioral cloning
-- Compare BC with RL from scratch
-- Experiment with DAgger
+- Build a RAG system from scratch
+- Compare chunking strategies
+- Implement semantic search with embeddings
+- Evaluate retrieval precision and recall
 
 ---
 
-### 7.3 Sim-to-Real Transfer
-
-**Concepts:**
-- The reality gap
-- Domain randomization
-- System identification
-- Adaptive methods
-
-**Learning Objectives:**
-- [ ] Understand challenges of sim-to-real transfer
-- [ ] Implement domain randomization
-- [ ] Design robust policies
-- [ ] Evaluate transfer performance
-
-**Practical Exercises:**
-- Train with domain randomization
-- Analyze policy robustness to perturbations
-- Compare randomization strategies
-
----
-
-## Part 8: AI Agents (Weeks 26-28)
-
-### 8.1 Agent Architectures
+### 8.2 AI Agents & Tool Use
 
 **Concepts:**
 - ReAct pattern (Reasoning + Acting)
 - Tool use and function calling
-- Memory systems (short-term, long-term, episodic)
+- Memory systems (short-term, long-term)
 - Planning and reasoning chains
 
 **Learning Objectives:**
@@ -670,44 +665,115 @@ A comprehensive, progressive learning curriculum covering foundations through ad
 
 ---
 
-### 8.2 Building Agents
+### 8.3 AI Evaluations
 
 **Concepts:**
-- Agent frameworks (LangChain, LlamaIndex, custom)
-- Retrieval-augmented generation (RAG)
-- Multi-agent systems
-- Agent evaluation and debugging
+- LLM evaluation metrics and benchmarks
+- Human evaluation design
+- Automated evaluation with LLM-as-judge
+- Red teaming and safety evaluation
 
 **Learning Objectives:**
-- [ ] Build agents with LangChain/LlamaIndex
-- [ ] Implement RAG for knowledge-grounded agents
-- [ ] Design multi-agent collaboration
-- [ ] Evaluate agent performance
+- [ ] Design evaluation frameworks for AI systems
+- [ ] Implement automated evaluation pipelines
+- [ ] Understand limitations of different eval approaches
+- [ ] Build evaluation harnesses
 
 **Practical Exercises:**
-- Build a RAG-based Q&A agent
-- Create a research assistant agent
-- Implement agent-to-agent communication
-- Build evaluation harnesses
+- Build an evaluation pipeline for an LLM task
+- Compare human vs automated evaluation
+- Implement LLM-as-judge evaluation
+- Design a red teaming protocol
 
 ---
 
-### 8.3 Capstone Project
+### 8.4 Production Monitoring
 
-**Design and build a complete AI agent system:**
+**Concepts:**
+- ML system monitoring and observability
+- Data drift and model degradation
+- A/B testing for ML systems
+- Incident response and rollback
 
-**Options:**
-1. **Research Assistant:** An agent that can search papers, summarize findings, and answer questions
-2. **Code Assistant:** An agent that can write, debug, and explain code
-3. **Task Automation Agent:** An agent that can break down complex tasks and execute them
-4. **Multi-Modal Agent:** An agent that can process and generate text, images, and code
+**Learning Objectives:**
+- [ ] Monitor ML systems in production
+- [ ] Detect and respond to data drift
+- [ ] Design A/B tests for model changes
+- [ ] Build alerting and rollback mechanisms
 
-**Requirements:**
-- Clear problem definition
-- Architecture design document
-- Implementation with proper abstractions
-- Evaluation on realistic tasks
-- Documentation and demo
+**Practical Exercises:**
+- Build a monitoring dashboard
+- Implement drift detection
+- Design an A/B testing framework
+- Simulate production incidents and responses
+
+---
+
+## Part 9: Advanced Topics (Weeks 28-30)
+
+### 9.1 Inference Optimization
+
+**Concepts:**
+- KV-cache and attention optimization
+- Quantization (INT8, INT4)
+- Speculative decoding
+- Batching strategies (continuous batching)
+
+**Learning Objectives:**
+- [ ] Understand KV-cache mechanics
+- [ ] Implement quantization from scratch
+- [ ] Explain speculative decoding
+- [ ] Optimize inference throughput and latency
+
+**Practical Exercises:**
+- Implement KV-cache for transformer inference
+- Quantize a model and measure quality tradeoffs
+- Build a speculative decoding prototype
+- Compare batching strategies
+
+---
+
+### 9.2 ML Systems & Experiment Tracking
+
+**Concepts:**
+- Experiment tracking and reproducibility
+- Feature stores and data pipelines
+- Model versioning and registry
+- Distributed training concepts
+
+**Learning Objectives:**
+- [ ] Track experiments systematically
+- [ ] Design data pipelines for ML
+- [ ] Version models and datasets
+- [ ] Understand distributed training tradeoffs
+
+**Practical Exercises:**
+- Set up experiment tracking
+- Build a simple feature store
+- Implement model versioning
+- Simulate distributed training scenarios
+
+---
+
+### 9.3 Multimodal AI
+
+**Concepts:**
+- Vision-language models (CLIP, LLaVA)
+- Cross-modal attention and fusion
+- Image generation (diffusion models)
+- Audio and speech models
+
+**Learning Objectives:**
+- [ ] Understand cross-modal representations
+- [ ] Implement contrastive learning (CLIP-style)
+- [ ] Explain diffusion model fundamentals
+- [ ] Build multimodal pipelines
+
+**Practical Exercises:**
+- Implement CLIP-style contrastive learning
+- Build a simple image-text retrieval system
+- Explore diffusion model sampling
+- Create a multimodal classification pipeline
 
 ---
 

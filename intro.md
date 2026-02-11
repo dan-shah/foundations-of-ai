@@ -34,18 +34,20 @@ jupyter notebook
 
 | Part | Topics | Notebooks |
 |------|--------|-----------|
-| **1. Mathematical Foundations** | Linear algebra, calculus, probability & statistics, classical ML, optimization | 01–06 |
-| **2. Python Foundations** | OOP for ML, NumPy deep dive | 07–08 |
-| **3. Neural Network Fundamentals** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
-| **4. Neural Network Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
-| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 17–20 |
-| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 21–24 |
-| **7. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 25–28 |
-| **8. Advanced Topics** | Tokenization & LM training, inference optimization, ML systems, multimodal AI | 29–32 |
+| **1. Mathematical Foundations** | Linear algebra, calculus, probability & statistics | 01–03 |
+| **2. Programming Foundations** | OOP for ML, NumPy deep dive | 04–05 |
+| **3. Classical ML & Optimization** | Classical ML, linear programming, optimization theory | 06–08 |
+| **4. Neural Network Fundamentals** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
+| **5. Neural Network Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
+| **6. Transformers & LLMs** | Transformer architecture, embeddings, tokenization, language models, fine-tuning | 17–21 |
+| **7. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 22–25 |
+| **8. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 26–29 |
+| **9. Advanced Topics** | Inference optimization, ML systems, multimodal AI | 30–32 |
 
+(make-it-yours)=
 ## Make It Yours
 
-The entire curriculum can be personalized to **your** interest using the personalization guide in [`skill.md`](skill.md). The idea is simple:
+The entire curriculum can be personalized to **your** interest using the personalization guide in [`skill.md`](https://github.com/dan-shah/foundations-of-ai/blob/main/skill.md). The idea is simple:
 
 > The math stays rigorous. The code still runs. But the narrative, analogies, and exercises connect to something you already care about.
 
@@ -66,7 +68,7 @@ Every mathematical concept maps to your domain through a consistent pattern:
 | Eigenvectors | "What are the fundamental independent factors?" |
 | SVD | "What hidden patterns explain what I see?" |
 
-The linear algebra notebook (`01_linear_algebra.ipynb`) is the reference implementation, personalized through the lens of Formula 1 racing. See `skill.md` for the full guide and example mappings for F1, cooking, music, and basketball.
+The linear algebra notebook (`01_linear_algebra.ipynb`) is the reference implementation, personalized through the lens of Formula 1 racing. See [`skill.md`](https://github.com/dan-shah/foundations-of-ai/blob/main/skill.md) for the full guide and example mappings for F1, cooking, music, and basketball.
 
 ## Prerequisites
 

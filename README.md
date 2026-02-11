@@ -19,14 +19,15 @@ jupyter notebook
 
 | Part | Topics | Notebooks |
 |------|--------|-----------|
-| **1. Math Foundations** | Linear algebra, calculus, probability & statistics, classical ML, optimization | 01–06 |
-| **2. Python Foundations** | OOP for ML, NumPy deep dive | 07–08 |
-| **3. Neural Networks** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
-| **4. Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
-| **5. Transformers & LLMs** | Transformer architecture, language models, embeddings, fine-tuning | 17–20 |
-| **6. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 21–24 |
-| **7. Applied AI** | RAG, AI agents, evaluations, production monitoring | 25–28 |
-| **8. Advanced Topics** | Tokenization, inference optimization, ML systems, multimodal AI | 29–32 |
+| **1. Math Foundations** | Linear algebra, calculus, probability & statistics | 01–03 |
+| **2. Programming Foundations** | OOP for ML, NumPy deep dive | 04–05 |
+| **3. Classical ML & Optimization** | Classical ML, linear programming, optimization theory | 06–08 |
+| **4. Neural Networks** | Perceptrons, backpropagation, PyTorch, training | 09–12 |
+| **5. Architectures** | CNNs, computer vision, RNNs, attention mechanisms | 13–16 |
+| **6. Transformers & LLMs** | Transformer architecture, embeddings, tokenization, language models, fine-tuning | 17–21 |
+| **7. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 22–25 |
+| **8. Applied AI** | RAG, AI agents, evaluations, production monitoring | 26–29 |
+| **9. Advanced Topics** | Inference optimization, ML systems, multimodal AI | 30–32 |
 
 Every concept is taught with intuitive explanations before formulas, visualizations, from-scratch implementations, and practical exercises.
 

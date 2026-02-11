@@ -5,55 +5,62 @@ parts:
   - caption: "Part 1: Mathematical Foundations"
     chapters:
       - file: 01_linear_algebra
+        sections:
+          - file: 01_linear_algebra_tennis
       - file: 02_calculus
+        sections:
+          - file: 02_calculus_cooking
       - file: 03_probability_statistics
-      - file: 04_classical_ml
-      - file: 05_optimization_linear_programming
-      - file: 06_optimization_theory
 
-  - caption: "Part 2: Python Foundations"
+  - caption: "Part 2: Programming Foundations"
     chapters:
-      - file: 07_python_oop
-      - file: 08_numpy_deep_dive
+      - file: 04_python_oop
+      - file: 05_numpy_deep_dive
 
-  - caption: "Part 3: Neural Network Fundamentals"
+  - caption: "Part 3: Classical ML & Optimization"
+    chapters:
+      - file: 06_classical_ml
+      - file: 07_optimization_linear_programming
+      - file: 08_optimization_theory
+
+  - caption: "Part 4: Neural Network Fundamentals"
     chapters:
       - file: 09_perceptrons_basic_networks
       - file: 10_backpropagation
       - file: 11_pytorch_fundamentals
       - file: 12_training_deep_networks
 
-  - caption: "Part 4: Neural Network Architectures"
+  - caption: "Part 5: Neural Network Architectures"
     chapters:
       - file: 13_convolutional_neural_networks
       - file: 14_computer_vision_depth
       - file: 15_recurrent_neural_networks
       - file: 16_attention_mechanisms
 
-  - caption: "Part 5: Transformers & LLMs"
+  - caption: "Part 6: Transformers & LLMs"
     chapters:
       - file: 17_transformer_architecture
-      - file: 18_language_models
-      - file: 19_embeddings
-      - file: 20_finetuning_and_peft
+      - file: 18_embeddings
+      - file: 19_tokenization_lm_training
+      - file: 20_language_models
+      - file: 21_finetuning_and_peft
 
-  - caption: "Part 6: Reinforcement Learning"
+  - caption: "Part 7: Reinforcement Learning"
     chapters:
-      - file: 21_rl_fundamentals
-      - file: 22_q_learning_dqn
-      - file: 23_policy_gradients
-      - file: 24_ppo_modern_rl
+      - file: 22_rl_fundamentals
+      - file: 23_q_learning_dqn
+      - file: 24_policy_gradients
+      - file: 25_ppo_modern_rl
 
-  - caption: "Part 7: Applied AI Systems"
+  - caption: "Part 8: Applied AI Systems"
     chapters:
-      - file: 25_rag
-      - file: 26_ai_agents
-      - file: 27_ai_evals
-      - file: 28_production_monitoring
+      - file: 26_rag
+      - file: 27_ai_agents
+      - file: 28_ai_evals
+      - file: 29_production_monitoring
 
-  - caption: "Part 8: Advanced Topics"
+  - caption: "Part 9: Advanced Topics"
     chapters:
-      - file: 29_tokenization_lm_training
       - file: 30_inference_optimization
       - file: 31_ml_systems
       - file: 32_multimodal_ai

@@ -33,6 +33,7 @@ exclude_patterns:
   - .claude
   - curriculum.md
   - skill.md
+  - README.md
 
 sphinx:
   config:
