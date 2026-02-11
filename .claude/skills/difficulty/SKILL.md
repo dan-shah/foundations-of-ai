@@ -18,7 +18,7 @@ Extract the notebook target and audience from `$ARGUMENTS`.
 - If only an audience is provided, ask which notebook to adapt.
 - If neither is provided, ask for both.
 
-**Supported audiences:** middle-schooler, high-schooler, college-freshman, grad-student, non-technical-adult, grandparent
+**Supported audiences:** eli5, middle-schooler, high-schooler, college-freshman, grad-student, non-technical-adult
 
 Map the notebook number to its filename (e.g., `02` → `02_calculus.ipynb`). Use Glob with pattern `{number}_*.ipynb` to find the exact file.
 

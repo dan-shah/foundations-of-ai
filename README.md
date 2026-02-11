@@ -54,22 +54,22 @@ Adapts vocabulary, notation, examples, and pacing for a specific audience while 
 
 ```bash
 /difficulty 02 middle-schooler
-/difficulty 17 grandparent
+/difficulty 17 eli5
 ```
 
-Supported audiences: middle-schooler, high-schooler, college-freshman, grad-student, non-technical-adult, grandparent.
+Supported audiences: eli5, middle-schooler, high-schooler, college-freshman, grad-student, non-technical-adult.
 
 **Produces:** A difficulty-adapted `.ipynb` notebook.
 
 ### `/challenge` — Gamified Learning
 
-Transforms a notebook into progressively harder missions. Concepts are taught through struggle — minimal upfront explanation, hints available when stuck, solutions revealed after attempting.
+Transforms a notebook into progressively harder missions. Concepts are taught through struggle — minimal upfront explanation, hints available when stuck, solutions revealed after attempting. Features interactive hint tracking, a live score bar, and a polished game-like UI.
 
 ```bash
 /challenge 02
 ```
 
-**Produces:** A challenge-driven `.ipynb` notebook with worlds, levels, and boss fights.
+**Produces:** A standalone `.html` file with worlds, levels, boss fights, and a live score tracker.
 
 ### `/story` — Narrative Learning
 
@@ -103,7 +103,7 @@ The `examples/` directory showcases each skill's output:
 | `/personalize` | [linear_algebra_tennis.ipynb](examples/personalize/linear_algebra_tennis.ipynb) | Linear algebra through tennis serve mechanics |
 | `/personalize` | [calculus_cooking.ipynb](examples/personalize/calculus_cooking.ipynb) | Calculus through cooking techniques |
 | `/difficulty` | [calculus_middle_schooler.ipynb](examples/difficulty/calculus_middle_schooler.ipynb) | Calculus adapted for middle school students |
-| `/challenge` | [calculus_game.ipynb](examples/challenge/calculus_game.ipynb) | Calculus as a gamified challenge sequence |
+| `/challenge` | [calculus_game.html](examples/challenge/calculus_game.html) | Calculus as a gamified challenge sequence |
 | `/story` | [calculus_meridian_protocol.html](examples/story/calculus_meridian_protocol.html) | Calculus embedded in a sci-fi narrative |
 | `/visualize` | [calculus_interactive.html](examples/visualize/calculus_interactive.html) | Calculus with interactive D3.js visualizations |
 
@@ -124,7 +124,7 @@ You can personalize manually using `skill.md` as your guide. It contains the sam
 ├── examples/                          # Skill demonstration outputs
 │   ├── personalize/                   #   Domain-adapted notebooks
 │   ├── difficulty/                    #   Audience-level adaptations
-│   ├── challenge/                     #   Gamified challenge notebooks
+│   ├── challenge/                     #   Gamified challenge HTML files
 │   ├── story/                         #   Narrative HTML files
 │   └── visualize/                     #   Interactive D3.js HTML files
 ├── .claude/skills/                    # 5 Claude Code skill definitions

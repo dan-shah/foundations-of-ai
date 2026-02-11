@@ -1,154 +1,237 @@
-# Level Template
+# Level Template (HTML)
 
-Every level follows this exact structure. All 5 components are required.
+Every level follows this exact HTML structure. All 5 components are required.
 
 ---
 
 ## Standard Level Format
 
-```markdown
----
+```html
+<div class="level" id="level-W-N" data-difficulty="easy|medium|hard" data-base-points="10|15|20">
 
-## Level [World].[Number]: [Evocative Name]
+  <div class="level-header">
+    <h3>Level [World].[Number]: [Evocative Name]</h3>
+    <div class="level-meta">
+      <span class="badge type-badge">[Compute | Predict | Debug | Construct | Optimize | Connect | Estimate]</span>
+      <span class="badge points-badge">[10 | 15 | 20] pts</span>
+      <span class="badge diff-badge">[Easy | Medium | Hard]</span>
+    </div>
+    <label class="complete-toggle">
+      <input type="checkbox" data-level="W.N" data-base-points="10"> Mark Complete
+    </label>
+  </div>
 
-**Type:** [Compute | Predict | Debug | Construct | Optimize | Connect | Estimate]
-**Points:** [10 | 15 | 20 | 30 | 50]
-**Difficulty:** [Easy | Medium | Hard | Boss | Final Boss]
+  <div class="mission">
+    <h4>Mission</h4>
+    <p>[A concrete, specific task with a clear success condition.]</p>
+  </div>
 
-### 🎯 Mission
+  <div class="intel">
+    <h4>Intel</h4>
+    <p>[Minimal context — just enough to make the mission possible. The key formula or rule, one worked example if new, a reminder of relevant previous concepts.]</p>
+  </div>
 
-[A concrete, specific task with a clear success condition.]
+  <div class="hints">
+    <h4>Hints</h4>
 
-### 📋 Intel
+    <details class="hint" data-level="W.N" data-hint-num="1" data-penalty="2">
+      <summary>Hint 1 — Conceptual Nudge (-2 pts)</summary>
+      <div class="hint-content">
+        <p>[A nudge in the right direction. Doesn't give away the method.]</p>
+      </div>
+    </details>
 
-[Minimal context — just enough to make the mission possible. The key formula or rule, one worked example if new, a reminder of relevant previous concepts.]
+    <details class="hint" data-level="W.N" data-hint-num="2" data-penalty="2">
+      <summary>Hint 2 — Methodological Clue (-2 pts)</summary>
+      <div class="hint-content">
+        <p>[A more specific clue about which method/formula to use.]</p>
+      </div>
+    </details>
 
-### 💡 Hints
+    <details class="hint" data-level="W.N" data-hint-num="3" data-penalty="2">
+      <summary>Hint 3 — Detailed Walkthrough (-2 pts)</summary>
+      <div class="hint-content">
+        <p>[A nearly-complete worked approach. Everything except the final computation.]</p>
+      </div>
+    </details>
+  </div>
 
-<details>
-<summary>Hint 1 (Conceptual Nudge)</summary>
+  <details class="solution">
+    <summary>Reveal Solution</summary>
+    <div class="solution-content">
 
-[A nudge in the right direction. Doesn't give away the method.]
+      <div class="solution-section">
+        <h5>The Answer</h5>
+        <div class="code-block">
+          <div class="code-header">Solution Code</div>
+          <pre><code>[Runnable code that solves the challenge]</code></pre>
+        </div>
+        <img src="data:image/png;base64,..." alt="[description]" class="solution-plot">
+      </div>
 
-</details>
+      <div class="solution-section">
+        <h5>The Concept</h5>
+        <p>[Formal explanation — this is where the teaching happens.]</p>
+      </div>
 
-<details>
-<summary>Hint 2 (Methodological Clue)</summary>
+      <div class="solution-section">
+        <h5>Common Mistakes</h5>
+        <ul>
+          <li><strong>[Mistake 1]:</strong> [Why it happens and how to avoid it]</li>
+        </ul>
+      </div>
 
-[A more specific clue about which method/formula to use.]
+      <div class="solution-section">
+        <h5>ML Connection</h5>
+        <p>[How this concept appears in machine learning]</p>
+      </div>
 
-</details>
+    </div>
+  </details>
 
-<details>
-<summary>Hint 3 (Detailed Walkthrough)</summary>
+  <div class="bonus-challenge">
+    <h4>Bonus Challenge (+5 pts)</h4>
+    <p>[An optional harder variant that extends the concept.]</p>
+  </div>
 
-[A nearly-complete worked approach. Everything except the final computation.]
-
-</details>
-
-### ✅ Solution
-
-<details>
-<summary>Click to reveal solution</summary>
-
-**The Answer:**
-[Code cell or mathematical result]
-
-**The Concept:**
-[Formal explanation — this is where the teaching happens.]
-
-**Common Mistakes:**
-- [Mistake 1]: [Why it happens and how to avoid it]
-
-**ML Connection:**
-[How this concept appears in machine learning]
-
-</details>
-
-### ⭐ Bonus Challenge
-
-[An optional harder variant that extends the concept.]
+</div>
 ```
 
 ---
 
 ## Boss Level Format
 
-```markdown
-## 🏆 Boss Level: [Dramatic Name]
+```html
+<div class="level boss-level" id="boss-W" data-difficulty="boss" data-base-points="30">
 
-**Type:** Connect or Construct
-**Points:** 30
-**Difficulty:** Boss
+  <div class="level-header">
+    <h3>Boss Level: [Dramatic Name]</h3>
+    <div class="level-meta">
+      <span class="badge type-badge">Connect or Construct</span>
+      <span class="badge points-badge">30 pts</span>
+      <span class="badge diff-badge boss">Boss</span>
+    </div>
+    <label class="complete-toggle">
+      <input type="checkbox" data-level="boss-W" data-base-points="30"> Mark Complete
+    </label>
+  </div>
 
-### 🎯 Mission
+  <div class="mission">
+    <h4>Mission</h4>
+    <p>[Multi-part challenge combining all concepts from this World.]</p>
+    <ol>
+      <li>[Sub-task using Concept A]</li>
+      <li>[Sub-task using Concept B]</li>
+      <li>[Sub-task combining A + B + C]</li>
+    </ol>
+  </div>
 
-[Multi-part challenge combining all concepts from this World.]
+  <div class="intel">
+    <h4>Intel</h4>
+    <p>[Recap of all concepts from this World.]</p>
+  </div>
 
-Part 1: [Sub-task using Concept A]
-Part 2: [Sub-task using Concept B]
-Part 3: [Sub-task combining A + B + C]
+  <div class="hints">
+    <h4>Hints</h4>
+    [Same 3-tier details structure, but hints reference specific levels. Penalty: -5 pts each.]
+  </div>
 
-### 📋 Intel
+  <details class="solution">
+    <summary>Reveal Solution</summary>
+    <div class="solution-content">
+      [Full multi-part solution with synthesis explanation.]
+    </div>
+  </details>
 
-[Recap of all concepts from this World.]
+  <div class="bonus-challenge">
+    <h4>Bonus Challenge (+5 pts)</h4>
+    <p>[Bridge to the next World's topics.]</p>
+  </div>
 
-### 💡 Hints
-
-[Same 3-tier structure, but hints reference specific levels.]
-
-### ✅ Solution
-
-[Full multi-part solution with synthesis explanation.]
-
-### ⭐ Bonus Challenge
-
-[Bridge to the next World's topics.]
+</div>
 ```
 
 ---
 
 ## Final Boss Format
 
-```markdown
-## 👑 Final Boss: [Epic Name]
+```html
+<div class="level final-boss-level" id="final-boss" data-difficulty="final-boss" data-base-points="50">
 
-**Type:** Construct
-**Points:** 50
-**Difficulty:** Final Boss
+  <div class="level-header">
+    <h3>Final Boss: [Epic Name]</h3>
+    <div class="level-meta">
+      <span class="badge type-badge">Construct</span>
+      <span class="badge points-badge">50 pts</span>
+      <span class="badge diff-badge final-boss">Final Boss</span>
+    </div>
+    <label class="complete-toggle">
+      <input type="checkbox" data-level="final-boss" data-base-points="50"> Mark Complete
+    </label>
+  </div>
 
-### 🎯 Mission
+  <div class="mission">
+    <h4>Mission</h4>
+    <p>[A substantial project-style challenge requiring concepts from every World.]</p>
+  </div>
 
-[A substantial project-style challenge requiring concepts from every World.]
+  <div class="intel">
+    <h4>Intel</h4>
+    <p>[Comprehensive cheat sheet — formulas and key ideas, no explanations.]</p>
+  </div>
 
-### 📋 Intel
+  <div class="hints">
+    <h4>Hints</h4>
+    [Same 3-tier details structure, referencing specific Worlds and Levels. Penalty: -8 pts each.]
+  </div>
 
-[Comprehensive cheat sheet — formulas and key ideas, no explanations.]
+  <details class="solution">
+    <summary>Reveal Solution</summary>
+    <div class="solution-content">
+      [Complete solution with reflection mapping each part back to concepts learned.]
+    </div>
+  </details>
 
-### 💡 Hints
-
-[Same 3-tier structure, referencing specific Worlds and Levels.]
-
-### ✅ Solution
-
-[Complete solution with reflection mapping each part back to concepts learned.]
+</div>
 ```
 
 ---
 
-## Formatting Rules
+## CSS Classes Reference
 
-### `<details>` Tags
-- Always include a blank line after `<summary>` closing tag
-- Always include a blank line before `</details>` closing tag
-- Content inside should be full markdown
+| Class | Element | Purpose |
+|-------|---------|---------|
+| `.level` | `<div>` | Standard level container |
+| `.boss-level` | `<div>` | Boss level — gold gradient top border |
+| `.final-boss-level` | `<div>` | Final boss — gold border + glow |
+| `.level-header` | `<div>` | Level title, meta badges, complete toggle |
+| `.mission` | `<div>` | Mission block — `#e94560` left border |
+| `.intel` | `<div>` | Intel block — `#4fc3f7` left border |
+| `.hints` | `<div>` | Hints container |
+| `.hint` | `<details>` | Individual hint — `#f5a623` accent |
+| `.hint-content` | `<div>` | Hint body text |
+| `.solution` | `<details>` | Collapsible solution |
+| `.solution-content` | `<div>` | Solution body |
+| `.solution-section` | `<div>` | Sub-section within solution |
+| `.solution-plot` | `<img>` | Embedded base64 plot image |
+| `.bonus-challenge` | `<div>` | Bonus challenge block — dashed border |
+| `.code-block` | `<div>` | Styled code container |
+| `.code-header` | `<div>` | Code block label |
+| `.complete-toggle` | `<label>` | Level completion checkbox |
+| `.badge` | `<span>` | Metadata badge (type, points, difficulty) |
 
-### Code Cells
-- Solution code goes in a code cell immediately after the solution markdown
-- Code must be runnable and produce output
-- Include comments mapping steps to concepts
+## Data Attributes Reference
 
-### Scoring
+| Attribute | Element | Purpose |
+|-----------|---------|---------|
+| `data-level` | `.hint`, checkbox | Level identifier (e.g., "1.1", "boss-1") |
+| `data-hint-num` | `.hint` | Hint number (1, 2, or 3) |
+| `data-penalty` | `.hint` | Point deduction for opening this hint |
+| `data-base-points` | checkbox | Base points for the level |
+| `data-difficulty` | `.level` | Difficulty tier for styling |
+
+## Scoring
+
 | Difficulty | Base Points | Hint Penalty |
 |-----------|-------------|-------------|
 | Easy | 10 | -2 per hint |
@@ -158,15 +241,22 @@ Part 3: [Sub-task combining A + B + C]
 | Final Boss | 50 | -8 per hint |
 | Bonus | +5 | — |
 
-### Score Summary
-```markdown
-## 🏅 Score Summary
+## Score Summary Section
 
-| Achievement | Points Required | Badge |
-|------------|----------------|-------|
-| Completed | > 0 | 🌱 Beginner |
-| Solid | > 50% | 🌿 Intermediate |
-| Strong | > 75% | 🌳 Advanced |
-| Perfect | 100% | 🏆 Master |
-| No hints | 100% + no hints | ⭐ Legend |
+```html
+<div id="score-summary">
+  <h2>Score Summary</h2>
+  <table class="achievement-table">
+    <thead>
+      <tr><th>Achievement</th><th>Points Required</th><th>Badge</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Completed</td><td>&gt; 0</td><td>Beginner</td></tr>
+      <tr><td>Solid</td><td>&gt; 50%</td><td>Intermediate</td></tr>
+      <tr><td>Strong</td><td>&gt; 75%</td><td>Advanced</td></tr>
+      <tr><td>Perfect</td><td>100%</td><td>Master</td></tr>
+      <tr><td>No hints</td><td>100% + no hints</td><td>Legend</td></tr>
+    </tbody>
+  </table>
+</div>
 ```

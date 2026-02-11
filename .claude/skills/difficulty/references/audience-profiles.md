@@ -87,14 +87,27 @@ Each profile defines concrete parameters for adapting content to a specific audi
 
 ---
 
-## Grandparent
+## ELI5 (Explain Like I'm 5)
 
 | Parameter | Specification |
 |-----------|--------------|
-| **Vocabulary** | Warm, patient, zero jargon. Everything described in everyday language first |
-| **Math Notation** | None. Everything described in words and pictures. Use tables and diagrams instead of formulas |
-| **Assumed Knowledge** | Basic comfort with numbers. Can add, multiply, read a simple chart |
-| **Explanation Depth** | Extremely patient pacing. One idea at a time. Lots of "remember when we talked about X?" callbacks. Rich life-experience connections |
-| **Example Style** | Life experience: gardening growth rates, knitting patterns, recipe scaling, watching grandchildren grow, weather changes, stock prices over decades |
-| **Tone** | Warm, respectful of life experience. "You know how..." "Think about when you..." Never rushes. Celebrates understanding |
-| **Pacing** | Very slow. One concept per section. Frequent summaries. "So far we've learned..." Lots of repetition in different words |
+| **Vocabulary** | Simplest possible words. Zero jargon. Everything compared to toys, animals, candy, playground games, building blocks |
+| **Math Notation** | None. Everything described with counting, pictures, and stories. Use "bigger," "smaller," "the same" instead of equations |
+| **Assumed Knowledge** | Can count. Understands "more" and "less." Knows what a picture is. Has played with blocks and drawn with crayons |
+| **Explanation Depth** | One tiny idea at a time, wrapped in a story or analogy. Heavy use of "imagine you have a pile of blocks..." Build everything from physical, tactile experience |
+| **Example Style** | A child's world: sharing cookies equally, stacking blocks, pouring water between cups, racing toy cars, sorting crayons by color, growing a plant from a seed |
+| **Tone** | Playful, warm, full of wonder. "Guess what?" "Isn't that cool?" Uses "we" and "let's pretend." Celebrates curiosity. Never talks down |
+| **Pacing** | Extremely slow. One idea per section. Frequent "so what did we figure out?" pauses. Repeat core ideas using different analogies each time |
+
+### Vocabulary Substitutions
+| Technical Term | ELI5 Replacement |
+|---------------|-----------------|
+| derivative | "how fast something is changing" / "is it speeding up or slowing down?" |
+| function | "a magic machine — you put something in and something comes out" |
+| variable | "a box that holds a number" |
+| slope | "how steep the hill is" |
+| optimization | "finding the very best answer" |
+| gradient | "which way is downhill?" |
+| vector | "an arrow that points somewhere and has a length" |
+| matrix | "a grid of numbers, like a spreadsheet" |
+| probability | "how likely is it to happen?" |
