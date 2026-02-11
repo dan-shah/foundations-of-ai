@@ -31,8 +31,10 @@ exclude_patterns:
   - "**.ipynb_checkpoints"
   - .github
   - .claude
+  - examples
   - curriculum.md
   - skill.md
+  - skill-specs.md
   - README.md
 
 sphinx:

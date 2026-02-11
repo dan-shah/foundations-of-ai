@@ -4,63 +4,59 @@ root: intro
 parts:
   - caption: "Part 1: Mathematical Foundations"
     chapters:
-      - file: 01_linear_algebra
-        sections:
-          - file: 01_linear_algebra_tennis
-      - file: 02_calculus
-        sections:
-          - file: 02_calculus_cooking
-      - file: 03_probability_statistics
+      - file: notebooks/01_linear_algebra
+      - file: notebooks/02_calculus
+      - file: notebooks/03_probability_statistics
 
   - caption: "Part 2: Programming Foundations"
     chapters:
-      - file: 04_python_oop
-      - file: 05_numpy_deep_dive
+      - file: notebooks/04_python_oop
+      - file: notebooks/05_numpy_deep_dive
 
   - caption: "Part 3: Classical ML & Optimization"
     chapters:
-      - file: 06_classical_ml
-      - file: 07_optimization_linear_programming
-      - file: 08_optimization_theory
+      - file: notebooks/06_classical_ml
+      - file: notebooks/07_optimization_linear_programming
+      - file: notebooks/08_optimization_theory
 
   - caption: "Part 4: Neural Network Fundamentals"
     chapters:
-      - file: 09_perceptrons_basic_networks
-      - file: 10_backpropagation
-      - file: 11_pytorch_fundamentals
-      - file: 12_training_deep_networks
+      - file: notebooks/09_perceptrons_basic_networks
+      - file: notebooks/10_backpropagation
+      - file: notebooks/11_pytorch_fundamentals
+      - file: notebooks/12_training_deep_networks
 
   - caption: "Part 5: Neural Network Architectures"
     chapters:
-      - file: 13_convolutional_neural_networks
-      - file: 14_computer_vision_depth
-      - file: 15_recurrent_neural_networks
-      - file: 16_attention_mechanisms
+      - file: notebooks/13_convolutional_neural_networks
+      - file: notebooks/14_computer_vision_depth
+      - file: notebooks/15_recurrent_neural_networks
+      - file: notebooks/16_attention_mechanisms
 
   - caption: "Part 6: Transformers & LLMs"
     chapters:
-      - file: 17_transformer_architecture
-      - file: 18_embeddings
-      - file: 19_tokenization_lm_training
-      - file: 20_language_models
-      - file: 21_finetuning_and_peft
+      - file: notebooks/17_transformer_architecture
+      - file: notebooks/18_embeddings
+      - file: notebooks/19_tokenization_lm_training
+      - file: notebooks/20_language_models
+      - file: notebooks/21_finetuning_and_peft
 
   - caption: "Part 7: Reinforcement Learning"
     chapters:
-      - file: 22_rl_fundamentals
-      - file: 23_q_learning_dqn
-      - file: 24_policy_gradients
-      - file: 25_ppo_modern_rl
+      - file: notebooks/22_rl_fundamentals
+      - file: notebooks/23_q_learning_dqn
+      - file: notebooks/24_policy_gradients
+      - file: notebooks/25_ppo_modern_rl
 
   - caption: "Part 8: Applied AI Systems"
     chapters:
-      - file: 26_rag
-      - file: 27_ai_agents
-      - file: 28_ai_evals
-      - file: 29_production_monitoring
+      - file: notebooks/26_rag
+      - file: notebooks/27_ai_agents
+      - file: notebooks/28_ai_evals
+      - file: notebooks/29_production_monitoring
 
   - caption: "Part 9: Advanced Topics"
     chapters:
-      - file: 30_inference_optimization
-      - file: 31_ml_systems
-      - file: 32_multimodal_ai
+      - file: notebooks/30_inference_optimization
+      - file: notebooks/31_ml_systems
+      - file: notebooks/32_multimodal_ai

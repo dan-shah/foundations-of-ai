@@ -2,7 +2,7 @@
 
 A comprehensive, hands-on AI curriculum — 32 interactive Jupyter notebooks from linear algebra to production AI systems.
 
-**Built to be personalized.** Fork it, pick your passion, and make every concept click.
+**Built to be transformed.** Five Claude Code skills let you personalize, simplify, gamify, narrate, or visualize any notebook — making every concept click for any learner.
 
 ## Quick Start
 
@@ -10,7 +10,7 @@ A comprehensive, hands-on AI curriculum — 32 interactive Jupyter notebooks fro
 git clone https://github.com/dan-shah/foundations-of-ai.git
 cd foundations-of-ai
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook notebooks/
 ```
 
 ## What's Inside
@@ -31,75 +31,116 @@ jupyter notebook
 
 Every concept is taught with intuitive explanations before formulas, visualizations, from-scratch implementations, and practical exercises.
 
-## Personalize It
+## Content Transformation Skills
 
-This is the key idea: **anyone can adapt this curriculum to their interests**.
+This curriculum ships with five [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills that transform any notebook into different learning formats. Each skill is a slash command — no setup required after cloning.
 
-The math stays rigorous. The code still runs. But the narrative, analogies, variable names, and exercises get rewritten so abstract concepts connect to something you already care about.
+### `/personalize` — Domain Adaptation
 
-### With Claude Code (Recommended)
+Rewrites narrative, analogies, variable names, and exercises so abstract concepts connect to something you already care about. All math and code stays identical.
 
-If you have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed, the `/personalize` skill is included in this repo and available immediately after cloning. No setup required.
-
-**Personalize a single notebook:**
 ```bash
-/personalize 02 cooking
+/personalize 02 cooking        # Single notebook
+/personalize all F1             # Entire curriculum
 ```
 
-**Personalize the entire curriculum:**
+Works with any domain — F1, cooking, music, basketball, astronomy, or anything else. Four domains have pre-built mappings; for others, Claude generates a mapping and confirms it with you before starting.
+
+**Produces:** A personalized `.ipynb` notebook.
+
+### `/difficulty` — Audience-Level Adjustment
+
+Adapts vocabulary, notation, examples, and pacing for a specific audience while preserving all core learning objectives and mathematical accuracy.
+
 ```bash
-/personalize all cooking
+/difficulty 02 middle-schooler
+/difficulty 17 grandparent
 ```
 
-This rewrites narrative, analogies, variable names, and exercises while preserving all math and ML connections. It works with any domain — F1, cooking, music, basketball, astronomy, or anything else. Four domains have pre-built mappings; for others, Claude will generate a mapping and confirm it with you before starting.
+Supported audiences: middle-schooler, high-schooler, college-freshman, grad-student, non-technical-adult, grandparent.
 
-### Without Claude Code
+**Produces:** A difficulty-adapted `.ipynb` notebook.
 
-You can personalize manually using `skill.md` as your guide. It contains the same mapping framework, golden rules, and checklist that the skill uses:
+### `/challenge` — Gamified Learning
+
+Transforms a notebook into progressively harder missions. Concepts are taught through struggle — minimal upfront explanation, hints available when stuck, solutions revealed after attempting.
+
+```bash
+/challenge 02
+```
+
+**Produces:** A challenge-driven `.ipynb` notebook with worlds, levels, and boss fights.
+
+### `/story` — Narrative Learning
+
+Transforms a notebook into a multi-chapter story where characters discover and apply concepts within a plot arc. Learners absorb material as a natural consequence of following the narrative.
+
+```bash
+/story 02              # Defaults to sci-fi
+/story 02 heist        # Choose a genre
+```
+
+Supported genres: sci-fi, mystery, fantasy, heist.
+
+**Produces:** A standalone `.html` file with the narrative.
+
+### `/visualize` — Interactive Explorations
+
+Transforms a notebook into a standalone interactive HTML page with D3.js visualizations. Each abstract concept gets a corresponding visual that learners can drag, slide, and toggle to build intuition through exploration.
+
+```bash
+/visualize 02
+```
+
+**Produces:** A self-contained `.html` file — no Python, Jupyter, or server required.
+
+## Examples
+
+The `examples/` directory showcases each skill's output:
+
+| Skill | Example | Description |
+|-------|---------|-------------|
+| `/personalize` | [linear_algebra_tennis.ipynb](examples/personalize/linear_algebra_tennis.ipynb) | Linear algebra through tennis serve mechanics |
+| `/personalize` | [calculus_cooking.ipynb](examples/personalize/calculus_cooking.ipynb) | Calculus through cooking techniques |
+| `/difficulty` | [calculus_middle_schooler.ipynb](examples/difficulty/calculus_middle_schooler.ipynb) | Calculus adapted for middle school students |
+| `/challenge` | [calculus_game.ipynb](examples/challenge/calculus_game.ipynb) | Calculus as a gamified challenge sequence |
+| `/story` | [calculus_meridian_protocol.html](examples/story/calculus_meridian_protocol.html) | Calculus embedded in a sci-fi narrative |
+| `/visualize` | [calculus_interactive.html](examples/visualize/calculus_interactive.html) | Calculus with interactive D3.js visualizations |
+
+## Without Claude Code
+
+You can personalize manually using `skill.md` as your guide. It contains the same mapping framework, golden rules, and checklist that the `/personalize` skill uses:
 
 1. **Fork** this repository
 2. **Pick your interest** — F1, cooking, music, basketball, astronomy, whatever
-3. **Follow `skill.md`** — mapping framework, step-by-step process, and example mappings for four domains
+3. **Follow `skill.md`** — mapping framework, step-by-step process, and example mappings
 4. **Rewrite the notebooks** — one at a time, following the golden rules
 5. **Verify** — run each notebook to confirm all code still executes
 
-### Example: Linear Algebra + Formula 1
+## Project Structure
 
-The linear algebra notebook (`01_linear_algebra.ipynb`) is the reference implementation, personalized for Formula 1:
-
-| Math Concept | F1 Analogy |
-|-------------|-----------|
-| Vectors | Car telemetry: `[speed, downforce, tire_temp]` |
-| Dot product | Setup-track alignment: "How well does this setup match Monza?" |
-| Norms | Actual car speed (L2), total g-force (L1), peak g (L-inf) |
-| Matrices | Setup changes that transform performance |
-| Eigenvectors | Natural performance axes of the car |
-| SVD | Driver-circuit predictor from sparse results |
+```
+├── notebooks/                         # 32 core curriculum notebooks (01–32)
+├── examples/                          # Skill demonstration outputs
+│   ├── personalize/                   #   Domain-adapted notebooks
+│   ├── difficulty/                    #   Audience-level adaptations
+│   ├── challenge/                     #   Gamified challenge notebooks
+│   ├── story/                         #   Narrative HTML files
+│   └── visualize/                     #   Interactive D3.js HTML files
+├── .claude/skills/                    # 5 Claude Code skill definitions
+├── intro.md                           # Jupyter Book landing page
+├── curriculum.md                      # Detailed curriculum outline
+├── skill.md                           # Style guide + personalization framework
+├── _config.yml                        # Jupyter Book configuration
+├── _toc.yml                           # Table of contents
+└── requirements.txt                   # Python dependencies
+```
 
 ## Prerequisites
 
 - Basic Python programming
 - High school math (algebra, basic calculus helpful but not required)
 - Curiosity about how AI works
-
-## Project Structure
-
-```
-├── 01_linear_algebra.ipynb        # Notebooks 01-32 (the curriculum)
-├── ...
-├── 32_multimodal_ai.ipynb
-├── .claude/skills/personalize/    # /personalize skill for Claude Code
-│   ├── SKILL.md                   #   Skill definition and instructions
-│   └── references/
-│       ├── style-guide.md         #   Notebook style standards
-│       └── domain-mappings.md     #   Concept mapping templates
-├── intro.md                       # Jupyter Book landing page
-├── curriculum.md                  # Detailed curriculum outline
-├── skill.md                       # Style guide + personalization framework
-├── _config.yml                    # Jupyter Book configuration
-├── _toc.yml                       # Table of contents
-└── requirements.txt               # Python dependencies
-```
 
 ## Contributing
 
