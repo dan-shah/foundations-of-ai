@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Foundations of AI &#8212; Foundations of AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Part 1.1: Linear Algebra for Deep Learning" href="notebooks/01_linear_algebra.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Foundations of AI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 1: Mathematical Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/01_linear_algebra.html">Part 1.1: Linear Algebra for Deep Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/02_calculus.html">Part 1.2: Calculus for Deep Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/03_probability_statistics.html">Part 1.3: Probability &amp; Statistics for Deep Learning</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 2: Programming Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/04_python_oop.html">Part 2.1: Python OOP for Deep Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/05_numpy_deep_dive.html">Part 2.2: NumPy Deep Dive</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 3: Classical ML &amp; Optimization</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/06_classical_ml.html">Part 3.1: Classical Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/07_optimization_linear_programming.html">Part 3.2: Optimization &amp; Linear Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/08_optimization_theory.html">Part 3.3: Optimization Theory for Machine Learning</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 4: Neural Network Fundamentals</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/09_perceptrons_basic_networks.html">Part 4.1: Perceptrons &amp; Basic Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/10_backpropagation.html">Part 4.2: Backpropagation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/11_pytorch_fundamentals.html">Part 4.3: PyTorch Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/12_training_deep_networks.html">Part 4.4: Training Deep Networks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 5: Neural Network Architectures</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/13_convolutional_neural_networks.html">Part 5.1: Convolutional Neural Networks (CNNs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/14_computer_vision_depth.html">Part 5.2: Computer Vision — Beyond Classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/15_recurrent_neural_networks.html">Part 5.3: Recurrent Neural Networks (RNNs)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/16_attention_mechanisms.html">Part 5.4: Attention Mechanisms</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 6: Transformers &amp; LLMs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/17_transformer_architecture.html">Part 6.1: Transformer Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/18_embeddings.html">Part 6.2: Embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/19_tokenization_lm_training.html">Part 6.3: Tokenization &amp; Language Model Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/20_language_models.html">Part 6.4: Language Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/21_finetuning_and_peft.html">Part 6.5: Fine-tuning &amp; PEFT</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 7: Reinforcement Learning</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/22_rl_fundamentals.html">Part 7.1: Reinforcement Learning Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/23_q_learning_dqn.html">Part 7.2: Q-Learning and Deep Q-Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/24_policy_gradients.html">Part 7.3: Policy Gradient Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/25_ppo_modern_rl.html">Part 7.4: PPO and Modern RL</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 8: Applied AI Systems</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/26_rag.html">Part 8.1: Retrieval-Augmented Generation (RAG)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/27_ai_agents.html">Part 8.2: AI Agents and Tool Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/28_ai_evals.html">Part 8.3: Evaluating AI Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/29_production_monitoring.html">Part 8.4: Production AI Systems</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Part 9: Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="notebooks/30_inference_optimization.html">Part 9.1: LLM Inference Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/31_ml_systems.html">Part 9.2: ML Systems &amp; Experiment Tracking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks/32_multimodal_ai.html">Part 9.3: Multimodal AI</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dan-shah/foundations-of-ai" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dan-shah/foundations-of-ai/edit/main/intro.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dan-shah/foundations-of-ai/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Foundations of AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-is">What This Is</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this">How to Use This</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curriculum-overview">Curriculum Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content-transformation-skills">Content Transformation Skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-it-yours">Make It Yours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="foundations-of-ai">
+<h1>Foundations of AI<a class="headerlink" href="#foundations-of-ai" title="Link to this heading">#</a></h1>
+<p>A comprehensive, hands-on curriculum covering the mathematical foundations, neural network architectures, and modern AI techniques — from linear algebra to transformers and beyond.</p>
+<p><strong>Built to be transformed.</strong> Five <a class="reference external" href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> skills let you personalize, simplify, gamify, narrate, or visualize any notebook — making every concept click for any learner.</p>
+<section id="what-this-is">
+<h2>What This Is<a class="headerlink" href="#what-this-is" title="Link to this heading">#</a></h2>
+<p>This is an open-source collection of 32 interactive Jupyter notebooks designed to take you from foundational math through building and training modern deep learning models. The notebooks use <strong>Formula 1 racing</strong> as a consistent analogy throughout — vectors become telemetry data, optimization becomes car setup tuning, gradient descent becomes chasing the perfect lap time. Don’t follow F1? No problem — the <code class="docutils literal notranslate"><span class="pre">/personalize</span></code> skill can rewrite every analogy to cooking, music, basketball, or any domain you choose.</p>
+<p>Every concept is taught with:</p>
+<ul class="simple">
+<li><p><strong>Intuitive explanations</strong> before formulas</p></li>
+<li><p><strong>Visualizations</strong> for every major concept</p></li>
+<li><p><strong>From-scratch implementations</strong> so you understand what’s happening under the hood</p></li>
+<li><p><strong>Practical exercises</strong> with test cases to verify your understanding</p></li>
+<li><p><strong>Connections to real ML</strong> showing why each concept matters</p></li>
+<li><p><strong>Personalizable narrative</strong> that connects abstract math to something you care about</p></li>
+</ul>
+</section>
+<section id="how-to-use-this">
+<h2>How to Use This<a class="headerlink" href="#how-to-use-this" title="Link to this heading">#</a></h2>
+<p><strong>Read online:</strong> Browse the chapters in the sidebar. All code output and visualizations are rendered inline.</p>
+<p><strong>Run interactively:</strong> Click the rocket icon (<span class="fa fa-rocket"></span>) at the top of any notebook page and select <strong>Colab</strong> to open it in Google Colab with free GPU access. No local setup required.</p>
+<p><strong>Run locally:</strong> Clone the repository and install dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/dan-shah/foundations-of-ai.git
+<span class="nb">cd</span><span class="w"> </span>foundations-of-ai
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+jupyter<span class="w"> </span>notebook<span class="w"> </span>notebooks/
+</pre></div>
+</div>
+</section>
+<section id="curriculum-overview">
+<h2>Curriculum Overview<a class="headerlink" href="#curriculum-overview" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Part</p></th>
+<th class="head"><p>Topics</p></th>
+<th class="head"><p>Notebooks</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>1. Mathematical Foundations</strong></p></td>
+<td><p>Linear algebra, calculus, probability &amp; statistics</p></td>
+<td><p>01–03</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>2. Programming Foundations</strong></p></td>
+<td><p>OOP for ML, NumPy deep dive</p></td>
+<td><p>04–05</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>3. Classical ML &amp; Optimization</strong></p></td>
+<td><p>Classical ML, linear programming, optimization theory</p></td>
+<td><p>06–08</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>4. Neural Network Fundamentals</strong></p></td>
+<td><p>Perceptrons, backpropagation, PyTorch, training</p></td>
+<td><p>09–12</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>5. Neural Network Architectures</strong></p></td>
+<td><p>CNNs, computer vision, RNNs, attention mechanisms</p></td>
+<td><p>13–16</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>6. Transformers &amp; LLMs</strong></p></td>
+<td><p>Transformer architecture, embeddings, tokenization, language models, fine-tuning</p></td>
+<td><p>17–21</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>7. Reinforcement Learning</strong></p></td>
+<td><p>RL fundamentals, Q-learning, policy gradients, PPO</p></td>
+<td><p>22–25</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>8. Applied AI Systems</strong></p></td>
+<td><p>RAG, AI agents &amp; tool use, evaluations, production monitoring</p></td>
+<td><p>26–29</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>9. Advanced Topics</strong></p></td>
+<td><p>Inference optimization, ML systems, multimodal AI</p></td>
+<td><p>30–32</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="content-transformation-skills">
+<h2>Content Transformation Skills<a class="headerlink" href="#content-transformation-skills" title="Link to this heading">#</a></h2>
+<p>This curriculum ships with five Claude Code skills that transform any notebook into different learning formats. Each skill is a slash command — no setup required after cloning.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Skill</p></th>
+<th class="head"><p>What It Does</p></th>
+<th class="head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/personalize</span></code></p></td>
+<td><p>Rewrites narrative, analogies, and exercises for any domain (F1, cooking, music, etc.)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebook</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/difficulty</span></code></p></td>
+<td><p>Adapts vocabulary, notation, and pacing for a specific audience (ELI5 through grad student)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> notebook</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/challenge</span></code></p></td>
+<td><p>Transforms into a game with missions, hints, score tracking, and boss fights</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.html</span></code> file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/story</span></code></p></td>
+<td><p>Wraps concepts in a multi-chapter narrative with characters and a plot arc</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.html</span></code> file</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/visualize</span></code></p></td>
+<td><p>Creates interactive D3.js visualizations you can drag, slide, and explore</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">.html</span></code> file</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All math stays rigorous. All code still runs. Only the presentation changes.</p>
+</section>
+<section id="make-it-yours">
+<span id="id1"></span><h2>Make It Yours<a class="headerlink" href="#make-it-yours" title="Link to this heading">#</a></h2>
+<p>The entire curriculum can be personalized to <strong>your</strong> interest using the personalization guide in <a class="reference external" href="https://github.com/dan-shah/foundations-of-ai/blob/main/skill.md"><code class="docutils literal notranslate"><span class="pre">skill.md</span></code></a>. The idea is simple:</p>
+<blockquote>
+<div><p>The math stays rigorous. The code still runs. But the narrative, analogies, and exercises connect to something you already care about.</p>
+</div></blockquote>
+<p><strong>How it works:</strong></p>
+<ol class="arabic simple">
+<li><p>Fork this repository</p></li>
+<li><p>Pick your interest (F1, cooking, music, basketball, astronomy…)</p></li>
+<li><p>Follow the mapping framework in <code class="docutils literal notranslate"><span class="pre">skill.md</span></code> to rewrite each notebook</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">nbconvert</span> <span class="pre">--to</span> <span class="pre">notebook</span> <span class="pre">--execute</span> <span class="pre">&lt;notebook&gt;.ipynb</span></code> to verify everything still works</p></li>
+</ol>
+<p>Every mathematical concept maps to your domain through a consistent pattern:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Math Concept</p></th>
+<th class="head"><p>Your Domain Question</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Vectors</p></td>
+<td><p>“What’s a list of numbers that describes something in my world?”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dot product</p></td>
+<td><p>“What two things do I compare for compatibility?”</p></td>
+</tr>
+<tr class="row-even"><td><p>Matrices</p></td>
+<td><p>“What process transforms inputs into outputs?”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Eigenvectors</p></td>
+<td><p>“What are the fundamental independent factors?”</p></td>
+</tr>
+<tr class="row-even"><td><p>SVD</p></td>
+<td><p>“What hidden patterns explain what I see?”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The linear algebra notebook (<code class="docutils literal notranslate"><span class="pre">01_linear_algebra.ipynb</span></code>) is the reference implementation, personalized through the lens of Formula 1 racing. See <a class="reference external" href="https://github.com/dan-shah/foundations-of-ai/blob/main/skill.md"><code class="docutils literal notranslate"><span class="pre">skill.md</span></code></a> for the full guide and example mappings for F1, cooking, music, and basketball.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Basic Python programming experience</p></li>
+<li><p>High school mathematics (algebra, basic calculus helpful but not required)</p></li>
+<li><p>Curiosity about how AI works</p></li>
+</ul>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h2>
+<p>Found an error? Have a suggestion? Want to share your personalized version? Contributions are welcome — open an issue or submit a pull request on <a class="reference external" href="https://github.com/dan-shah/foundations-of-ai">GitHub</a>.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
+<p>This work is licensed under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. You are free to share and adapt this material with attribution.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="notebooks/01_linear_algebra.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Part 1.1: Linear Algebra for Deep Learning</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-is">What This Is</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this">How to Use This</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#curriculum-overview">Curriculum Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#content-transformation-skills">Content Transformation Skills</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-it-yours">Make It Yours</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dan Shah
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
