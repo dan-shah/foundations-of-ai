@@ -538,7 +538,17 @@ jupyter<span class="w"> </span>notebook<span class="w"> </span>notebooks/
 </section>
 <section id="content-transformation-skills">
 <h2>Content Transformation Skills<a class="headerlink" href="#content-transformation-skills" title="Link to this heading">#</a></h2>
-<p>This curriculum ships with five Claude Code skills that transform any notebook into different learning formats. Each skill is a slash command — no setup required after cloning.</p>
+<p>This curriculum ships with five <a class="reference external" href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> skills that transform any notebook into different learning formats. <a class="reference external" href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> is Anthropic’s CLI tool for working with code — think of it as an AI pair programmer that runs in your terminal. Skills are reusable slash commands that teach Claude how to perform a specific task. When you clone this repo and open it in Claude Code, the skills are automatically available.</p>
+<p>Here’s what using a skill looks like in practice:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>you: /personalize 02 cooking
+
+Claude reads notebook 02 (calculus), builds a concept mapping
+(derivatives → temperature change rates, optimization → perfecting
+a recipe), then rewrites every analogy, variable name, and exercise
+while keeping all math and code intact. A few minutes later you have
+a new notebook where calculus is taught through cooking.
+</pre></div>
+</div>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Skill</p></th>
@@ -571,6 +581,7 @@ jupyter<span class="w"> </span>notebook<span class="w"> </span>notebooks/
 </table>
 </div>
 <p>All math stays rigorous. All code still runs. Only the presentation changes.</p>
+<p>Don’t use Claude Code? You can still personalize manually — see <a class="reference internal" href="#make-it-yours">Make It Yours</a> below.</p>
 </section>
 <section id="make-it-yours">
 <span id="id1"></span><h2>Make It Yours<a class="headerlink" href="#make-it-yours" title="Link to this heading">#</a></h2>

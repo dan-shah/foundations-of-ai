@@ -48,7 +48,19 @@ jupyter notebook notebooks/
 
 ## Content Transformation Skills
 
-This curriculum ships with five Claude Code skills that transform any notebook into different learning formats. Each skill is a slash command — no setup required after cloning.
+This curriculum ships with five [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills that transform any notebook into different learning formats. [Claude Code](https://docs.anthropic.com/en/docs/claude-code) is Anthropic's CLI tool for working with code — think of it as an AI pair programmer that runs in your terminal. Skills are reusable slash commands that teach Claude how to perform a specific task. When you clone this repo and open it in Claude Code, the skills are automatically available.
+
+Here's what using a skill looks like in practice:
+
+```
+you: /personalize 02 cooking
+
+Claude reads notebook 02 (calculus), builds a concept mapping
+(derivatives → temperature change rates, optimization → perfecting
+a recipe), then rewrites every analogy, variable name, and exercise
+while keeping all math and code intact. A few minutes later you have
+a new notebook where calculus is taught through cooking.
+```
 
 | Skill | What It Does | Output |
 |-------|-------------|--------|
@@ -59,6 +71,8 @@ This curriculum ships with five Claude Code skills that transform any notebook i
 | `/visualize` | Creates interactive D3.js visualizations you can drag, slide, and explore | `.html` file |
 
 All math stays rigorous. All code still runs. Only the presentation changes.
+
+Don't use Claude Code? You can still personalize manually — see [Make It Yours](#make-it-yours) below.
 
 (make-it-yours)=
 ## Make It Yours
