@@ -6,7 +6,9 @@ A comprehensive, hands-on curriculum covering the mathematical foundations, neur
 
 ## What This Is
 
-This is an open-source collection of 32 interactive Jupyter notebooks designed to take you from foundational math through building and training modern deep learning models. Every concept is taught with:
+This is an open-source collection of 32 interactive Jupyter notebooks designed to take you from foundational math through building and training modern deep learning models. The notebooks use **Formula 1 racing** as a consistent analogy throughout — vectors become telemetry data, optimization becomes car setup tuning, gradient descent becomes chasing the perfect lap time. Don't follow F1? No problem — the `/personalize` skill can rewrite every analogy to cooking, music, basketball, or any domain you choose.
+
+Every concept is taught with:
 
 - **Intuitive explanations** before formulas
 - **Visualizations** for every major concept
