@@ -2,6 +2,8 @@
 
 A comprehensive, hands-on AI curriculum — 32 interactive Jupyter notebooks from linear algebra to production AI systems.
 
+**[Read online](https://dan-shah.github.io/foundations-of-ai)** — no setup required.
+
 **Built to be transformed.** Five Claude Code skills let you personalize, simplify, gamify, narrate, or visualize any notebook — making every concept click for any learner.
 
 ## Quick Start

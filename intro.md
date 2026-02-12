@@ -2,7 +2,7 @@
 
 A comprehensive, hands-on curriculum covering the mathematical foundations, neural network architectures, and modern AI techniques — from linear algebra to transformers and beyond.
 
-**Built to be personalized.** This curriculum is designed so that anyone can adapt it to their interests. Love Formula 1? The dot product becomes setup-track alignment. Into cooking? Vectors become recipes. See [Make It Yours](#make-it-yours) below.
+**Built to be transformed.** Five [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills let you personalize, simplify, gamify, narrate, or visualize any notebook — making every concept click for any learner.
 
 ## What This Is
 
@@ -27,7 +27,7 @@ This is an open-source collection of 32 interactive Jupyter notebooks designed t
 git clone https://github.com/dan-shah/foundations-of-ai.git
 cd foundations-of-ai
 pip install -r requirements.txt
-jupyter notebook
+jupyter notebook notebooks/
 ```
 
 ## Curriculum Overview
@@ -43,6 +43,20 @@ jupyter notebook
 | **7. Reinforcement Learning** | RL fundamentals, Q-learning, policy gradients, PPO | 22–25 |
 | **8. Applied AI Systems** | RAG, AI agents & tool use, evaluations, production monitoring | 26–29 |
 | **9. Advanced Topics** | Inference optimization, ML systems, multimodal AI | 30–32 |
+
+## Content Transformation Skills
+
+This curriculum ships with five Claude Code skills that transform any notebook into different learning formats. Each skill is a slash command — no setup required after cloning.
+
+| Skill | What It Does | Output |
+|-------|-------------|--------|
+| `/personalize` | Rewrites narrative, analogies, and exercises for any domain (F1, cooking, music, etc.) | `.ipynb` notebook |
+| `/difficulty` | Adapts vocabulary, notation, and pacing for a specific audience (ELI5 through grad student) | `.ipynb` notebook |
+| `/challenge` | Transforms into a game with missions, hints, score tracking, and boss fights | `.html` file |
+| `/story` | Wraps concepts in a multi-chapter narrative with characters and a plot arc | `.html` file |
+| `/visualize` | Creates interactive D3.js visualizations you can drag, slide, and explore | `.html` file |
+
+All math stays rigorous. All code still runs. Only the presentation changes.
 
 (make-it-yours)=
 ## Make It Yours
